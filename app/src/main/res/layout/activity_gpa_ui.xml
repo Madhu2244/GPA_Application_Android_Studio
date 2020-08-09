@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_x="48dp"
+        android:layout_y="177dp"
+        android:ems="10"
+        android:hint="Grade(0-100)"
+        android:inputType="number"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_x="0dp"
+        android:layout_y="282dp"
+        android:text="Calculate!"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="215dp"
+        android:layout_x="75dp"
+        android:layout_y="447dp"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="18dp"
+        android:text="Grade to GPA"
+        android:textSize="40sp" />
+
+
+</AbsoluteLayout>

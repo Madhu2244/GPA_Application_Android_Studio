@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_x="2dp"
+        android:layout_y="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_x="72dp"
+        android:layout_y="5dp"
+        android:text="First Semester"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="138dp"
+        android:text="Second Semester"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="203dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="410dp"
+        android:layout_height="75dp"
+        android:layout_x="2dp"
+        android:layout_y="283dp"
+        android:text="Calculate"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="411dp"
+        android:layout_height="358dp"
+        android:layout_x="6dp"
+        android:layout_y="361dp"
+        android:textSize="28sp" />
+</AbsoluteLayout>
