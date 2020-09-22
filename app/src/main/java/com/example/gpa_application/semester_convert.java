@@ -23,7 +23,7 @@ public class semester_convert extends AppCompatActivity {
         semester2 = (EditText) findViewById(R.id.editText3);
         finalExam = (EditText) findViewById(R.id.editText4);
         calculate = (Button) findViewById(R.id.button5);
-        output = (TextView) findViewById(R.id.textView6);
+        output = (TextView) findViewById(R.id.textView3);
         output.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +43,7 @@ public class semester_convert extends AppCompatActivity {
                     }
                 }
                 output.setText("Your average is " + convertNumber  + "\nRegular: " + reg_conversion[index] + "\nHonors: " + honor_conversion[index] + "\nAP: " + ap_conversion[index]);
+                output.showContextMenu();
 
             }
         });

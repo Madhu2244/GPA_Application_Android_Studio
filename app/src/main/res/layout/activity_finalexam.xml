@@ -54,11 +54,23 @@
         android:text="Calculate"
         android:textSize="35sp" />
 
+    <View
+        android:id="@+id/myRectangleView1"
+        android:layout_width="376dp"
+        android:layout_height="234dp"
+        android:layout_x="22dp"
+        android:layout_y="437dp"
+        android:background="@drawable/rectangle" />
+
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="411dp"
-        android:layout_height="358dp"
-        android:layout_x="6dp"
-        android:layout_y="361dp"
-        android:textSize="28sp" />
+        android:scrollbars = "vertical"
+        android:id="@+id/textView3"
+        android:layout_width="376dp"
+        android:layout_height="224dp"
+        android:layout_x="24dp"
+        android:layout_y="443dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="40sp" />
+
 </AbsoluteLayout>

@@ -3,13 +3,22 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_x="87dp"
+        android:layout_y="7dp"
+        android:background="@drawable/rectangle" />
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="299dp"
         android:layout_height="wrap_content"
-        android:layout_x="48dp"
-        android:layout_y="177dp"
+        android:layout_x="78dp"
+        android:layout_y="200dp"
         android:ems="10"
+        android:gravity="clip_horizontal|center|center_horizontal|center_vertical"
         android:hint="Grade(0-100)"
         android:inputType="number"
         android:textSize="40sp" />
@@ -21,25 +30,37 @@
         android:layout_x="0dp"
         android:layout_y="282dp"
         android:text="Calculate!"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+
+        />
+
+    <View
+        android:id="@+id/myRectangleView1"
+        android:layout_width="376dp"
+        android:layout_height="234dp"
+        android:layout_x="22dp"
+        android:layout_y="437dp"
+        android:background="@drawable/rectangle" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="300dp"
-        android:layout_height="215dp"
-        android:layout_x="75dp"
-        android:layout_y="447dp"
-        android:text="TextView"
+        android:layout_width="376dp"
+        android:layout_height="224dp"
+        android:layout_x="24dp"
+        android:layout_y="443dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="271dp"
-        android:layout_height="wrap_content"
-        android:layout_x="58dp"
-        android:layout_y="18dp"
+        android:layout_width="252dp"
+        android:layout_height="72dp"
+        android:layout_x="92dp"
+        android:layout_y="0dp"
         android:text="Grade to GPA"
         android:textSize="40sp" />
-
 
 </AbsoluteLayout>

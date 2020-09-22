@@ -3,6 +3,7 @@ package com.example.gpa_application;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +22,7 @@ public class finalexam extends AppCompatActivity {
         semester1 = (EditText) findViewById(R.id.editText);
         semester2 = (EditText) findViewById(R.id.editText3);
         calculate = (Button) findViewById(R.id.button5);
-        output = (TextView) findViewById(R.id.textView6);
+        output = (TextView) findViewById(R.id.textView3);
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,13 +36,32 @@ public class finalexam extends AppCompatActivity {
                 String outputText = "";
                 for (int i = 0; i < gpa_conversion.length; i++)
                 {
-                        double x = (gpa_conversion[i]-convertNumber) / 0.2;
+                        double y = (Math.floor((gpa_conversion[i]-convertNumber) / 0.2));
+                        int x = (int)y;
                         double temp = gpa_conversion[i] + 0.5;
-                        if (x <= 100 || x >=0)
-                            outputText += "You need a " + x + "to raise your grade to the " + temp + " tier. \n";
+                        int grade = (int) temp;
+                        int jk = 0;
+                        if (i != 0)
+                        {
+                            double var = gpa_conversion[i-1] + 0.5;
+                            jk = (int) var;
+                        }
+                        else
+                        {
+                            jk = 100;
+                        }
+                        if (x <= 100 && x >=0)
+                            outputText +=  x + "for [" + grade + "-" + jk + "] tier. \n";
                         index = i;
+
                 }
+                if (outputText.equals(""))
+                    outputText = "You need bonus credit to pass.";
+
                 output.setText(outputText);
+                output.setMovementMethod(new ScrollingMovementMethod());
+
+
 
             }
         });
