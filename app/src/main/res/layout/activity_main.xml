@@ -32,8 +32,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
 
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="170dp"
         android:layout_marginBottom="-178dp"
 
@@ -52,11 +52,11 @@
 
 
         android:layout_centerInParent="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
 
-        android:layout_marginBottom="-358dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="-356dp"
         android:layout_weight="1"
         android:text="Grade To GPA Conversion"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
@@ -65,8 +65,8 @@
         android:id="@+id/button6"
 
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="410dp"
-        android:layout_height="175dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -74,7 +74,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="170dp"
-        android:layout_marginBottom="-536dp"
+        android:layout_marginBottom="-511dp"
         android:layout_weight="1"
         android:text="Final Exam Calculator"
 
