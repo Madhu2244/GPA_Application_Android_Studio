@@ -34,6 +34,7 @@ public class semester_convert extends AppCompatActivity {
                 double[] honor_conversion = new double[] {4.5,4.3,4.1,3.9,3.7,3.5,3.3,3.1,2.9,2.5,0};
                 double[] ap_conversion = new double[] {5,4.8,4.6,4.4,4.2,4,3.8,3.6,3.4,3,0};
                 int index = -1;
+
                 for (int i = 0; i < gpa_conversion.length; i++)
                 {
                     if (convertNumber >= gpa_conversion[i])
@@ -42,6 +43,7 @@ public class semester_convert extends AppCompatActivity {
                         break;
                     }
                 }
+
                 output.setText("Your average is " + convertNumber  + "\nRegular: " + reg_conversion[index] + "\nHonors: " + honor_conversion[index] + "\nAP: " + ap_conversion[index]);
                 output.showContextMenu();
 
